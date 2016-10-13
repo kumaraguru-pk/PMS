@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{027856d0-ce8f-492d-b582-029030fd5cdc}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NameOfLastUsedPublishProfile>FTP Local</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="api\vendor_modules\Gati\Database\GatiPricingInfo.JSON" />
+    <Content Include="api\vendor_modules\Gati\Database\GATISupportedLocation.JSON" />
+    <None Include="FTP Local.pubxml" />
+    <Content Include="package.json" />
+    <Compile Include="gulpfile.js" />
+    <Compile Include="server.js" />
+    <Compile Include="api\Locations.js" />
+    <Compile Include="api\ModuleLoader.js" />
+    <Compile Include="api\Vendors.js" />
+    <Compile Include="gulp\css.js" />
+    <Compile Include="gulp\js.js" />
+    <Compile Include="gulp\server.js" />
+    <Content Include="iisnode\KGURU-10640-stdout-1423365615950.txt" />
+    <Content Include="iisnode\KGURU-12064-stdout-1423366506942.txt" />
+    <Content Include="iisnode\KGURU-12508-stdout-1422734098400.txt" />
+    <Content Include="iisnode\KGURU-12664-stdout-1422739824137.txt" />
+    <Content Include="iisnode\KGURU-13352-stdout-1422750281981.txt" />
+    <Content Include="iisnode\KGURU-14040-stdout-1422748629542.txt" />
+    <Content Include="iisnode\KGURU-14476-stdout-1422737077528.txt" />
+    <Content Include="iisnode\KGURU-15212-stdout-1423453649583.txt" />
+    <Content Include="iisnode\KGURU-21156-stdout-1422749753392.txt" />
+    <Content Include="iisnode\KGURU-21684-stdout-1422744103618.txt" />
+    <Content Include="iisnode\KGURU-6604-stdout-1422853917813.txt" />
+    <Content Include="iisnode\KGURU-7392-stdout-1424141946701.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-2128-stdout-1424562955617.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-2476-stdout-1424315181047.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-3240-stdout-1424556984989.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-4848-stdout-1424314849374.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-5004-stdout-1424563654323.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-5056-stdout-1424560818777.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-6416-stdout-1424321450881.txt" />
+    <Content Include="iisnode\LIVINGROOM-PC-6916-stdout-1424557053600.txt" />
+    <Content Include="iisnode\index.html" />
+    <Compile Include="models\Quote.js" />
+    <Compile Include="models\QuoteQuery.js" />
+    <Compile Include="models\SupportedLocation.js" />
+    <Compile Include="ng\Constraints.svc.js" />
+    <Compile Include="ng\GetQuotes.ctrl.js" />
+    <Compile Include="ng\GetQuotes.Svc.js" />
+    <Compile Include="ng\Home.ctrl.js" />
+    <Compile Include="ng\Home.Svc.js" />
+    <Compile Include="ng\module.js" />
+    <Compile Include="ng\routes.js" />
+    <Content Include="web.config" />
+    <None Include="PickMyShipments - Web Deploy.pubxml" />
+    <None Include="PickMyShipments - FTP.pubxml" />
+    <Content Include="public\app.css" />
+    <Content Include="public\rsz_transparentlogo.png" />
+    <Compile Include="public\app.js" />
+    <Content Include="templates\home.html" />
+    <Content Include="templates\Quotes.html" />
+    <Content Include="views\index.html.ejs" />
+    <Compile Include="api\Common\Definitions.js" />
+    <Compile Include="api\Common\QuoteBuilderBase.js" />
+    <Compile Include="api\Common\QuoteGenerator.js" />
+    <Compile Include="api\VendorSupportedLocationsHandler\SupportedLocationsBuilder.js" />
+    <Content Include="api\VendorSupportedLocationsHandler\Database\SupportedLocationInfoDict.JSON" />
+    <Compile Include="api\vendor_modules\Fedex\FedexAPI.js" />
+    <Compile Include="api\vendor_modules\Gati\GatiAPI.js" />
+    <Compile Include="api\vendor_modules\Safex\SafexAPI.js" />
+    <Content Include="api\vendor_modules\Fedex\Database\FedexMinWeightInfo.JSON" />
+    <Content Include="api\vendor_modules\Fedex\Database\FedexPricingInfo.JSON" />
+    <Content Include="api\vendor_modules\Fedex\Database\FedexSupportedLocation.JSON" />
+    <Content Include="api\vendor_modules\Fedex\Database\FedexZonalInfo.JSON" />
+    <Compile Include="api\vendor_modules\Fedex\Database\FedexQuoteDataManager.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexPOQuoteConstants.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexPOQuoteMandates.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexQuoteConstants.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexQuoteMandates.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexSOQuoteConstants.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Enforcer\FedexSOQuoteMandates.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Patterns\FedexPOQuoteBuilder.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Patterns\FedexQuotesBuilderFactory.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Patterns\FedexQuotesConstantsFactory.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Patterns\FedexQuotesMandatesFactory.js" />
+    <Compile Include="api\vendor_modules\Fedex\WF_Quote\Patterns\FedexSOQuoteBuilder.js" />
+    <Compile Include="api\vendor_modules\Gati\Database\GatiQuoteDataManager.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiAirServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiAirServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiSurfaceServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Enforcer\GatiSurfaceServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Patterns\GatiAirQuoteBuilder.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Patterns\GatiQuotesBuilderFactory.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Patterns\GatiQuotesMndFactory.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Patterns\GatiQuotesSvcCnstFactory.js" />
+    <Compile Include="api\vendor_modules\Gati\WF_Quote\Patterns\GatiSurfaceQuoteBuilder.js" />
+    <Content Include="api\vendor_modules\Safex\Database\SafexPricingInfo.JSON" />
+    <Content Include="api\vendor_modules\Safex\Database\SafexSupportedLocationNew.JSON" />
+    <Compile Include="api\vendor_modules\Safex\Database\SafexQuoteDataManager.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexAirServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexAirServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexSurfaceServiceConstants.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Enforcer\SafexSurfaceServiceMandates.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Patterns\SafexAirQuoteBuilder.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Patterns\SafexQuotesBuilderFactory.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Patterns\SafexQuotesMndFactory.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Patterns\SafexQuotesSvcCnstFactory.js" />
+    <Compile Include="api\vendor_modules\Safex\WF_Quote\Patterns\SafexSurfaceQuoteBuilder.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="api" />
+    <Folder Include="api\Common" />
+    <Folder Include="api\vendor_modules" />
+    <Folder Include="api\vendor_modules\Fedex" />
+    <Folder Include="api\vendor_modules\Fedex\Database" />
+    <Folder Include="api\vendor_modules\Fedex\WF_Quote" />
+    <Folder Include="api\vendor_modules\Fedex\WF_Quote\Enforcer" />
+    <Folder Include="api\vendor_modules\Fedex\WF_Quote\Patterns" />
+    <Folder Include="api\vendor_modules\Gati" />
+    <Folder Include="api\vendor_modules\Gati\Database" />
+    <Folder Include="api\vendor_modules\Gati\WF_Quote" />
+    <Folder Include="api\vendor_modules\Gati\WF_Quote\Enforcer" />
+    <Folder Include="api\vendor_modules\Gati\WF_Quote\Patterns" />
+    <Folder Include="api\vendor_modules\Safex" />
+    <Folder Include="api\vendor_modules\Safex\Database" />
+    <Folder Include="api\vendor_modules\Safex\WF_Quote" />
+    <Folder Include="api\vendor_modules\Safex\WF_Quote\Enforcer" />
+    <Folder Include="api\vendor_modules\Safex\WF_Quote\Patterns" />
+    <Folder Include="api\VendorSupportedLocationsHandler" />
+    <Folder Include="api\VendorSupportedLocationsHandler\Database" />
+    <Folder Include="css" />
+    <Folder Include="gulp" />
+    <Folder Include="iisnode" />
+    <Folder Include="models" />
+    <Folder Include="ng" />
+    <Folder Include="public" />
+    <Folder Include="templates" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

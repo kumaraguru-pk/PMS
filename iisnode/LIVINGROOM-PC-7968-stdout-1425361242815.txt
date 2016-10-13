@@ -1,0 +1,12 @@
+server is listening on port NaN
+GATI_Quotes
+{ GATI_Quotes: [Function: generateQuotes] }
+API Module Loaded From GatiAPI
+API Module Loaded From FedexAPI
+SAFEX_Quotes
+{ GATI_Quotes: [Function: generateQuotes],
+  FEDEX_Quotes: [Function: generateQuotes],
+  SAFEX_Quotes: [Function: generateQuotes] }
+API Module Loaded From SafexAPI
+[0mGET / [32m200 [0m33.620 ms - 4371[0m
+[0mGET /templates/home.html [36m304 [0m2.788 ms - -[0m
